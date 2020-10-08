@@ -1,46 +1,81 @@
-<style>
 * {
   box-sizing: border-box;
-  font-family: 'hind', sans-serif;
-  font-size: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 
 body {
   margin: 0;
 }
 
+
 /* Style the header */
+
 .header {
   background-color: red;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
-  height: 50vh;
+  
+}
+
+
+.header h1{
+      font-size: 60px;
+      color: rgb(64, 97, 146);
+}
+
+
+.header p{
+  font-size: 40px;
+
 }
 
 /* Create three equal columns that floats next to each other */
 
 
-/*Ejemplo de estilos por clase*/
-
+/* Ejemplo de estilos por clase*/
 
 .column {
   float: left;
   width: 100%;
   /*padding: 0 20% 0 20%;*/
-  padding: 60px 20%;
+  padding: 20px 20%;
+}
+
+.column h2{
+  color: orangered; 
+  text-align: center;
+  
 }
 
 /* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+.gallery {
+  padding: 20px;
+  float: left;
+  width: 33.33%;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width:600px) {
   .column {
-    width: 100%;
+      width: 100%;
   }
 }
-</style>
