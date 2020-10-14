@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
 }
 
 body {
@@ -10,18 +9,17 @@ body {
 
 
 /* Style the header */
-
 .header {
-  background-color: red;
-  padding: 20px;
+  background-image: url('https://images.pexels.com/photos/3937174/pexels-photo-3937174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  padding: 10% 20px;
   text-align: center;
-  
 }
 
 
 .header h1{
       font-size: 60px;
-      color: rgb(64, 97, 146);
+      color: rgba(236, 88, 19, 0.918);
 }
 
 
@@ -35,18 +33,23 @@ body {
 
 /* Ejemplo de estilos por clase*/
 
-.column {
+.one-column {
   float: left;
   width: 100%;
   /*padding: 0 20% 0 20%;*/
   padding: 20px 20%;
+
 }
 
-.column h2{
-  color: orangered; 
+.one-column h1,
+.one-column h2 {
   text-align: center;
-  
 }
+
+.cadetblue{
+      background-color: cadetblue;
+}
+    
 
 /* Clear floats after the columns */
 
@@ -56,21 +59,28 @@ body {
   clear: both;
 }
 
-.gallery {
+.two-column {
   padding: 20px;
   float: left;
   width: 33.33%;
 }
 
-.gallery img {
+/*Three columns gallery*/
+
+.three-column {
+  padding: 20px;
+  float: left;
+  width: 33.33%;
+}
+
+.three-column img {
   width: 100%;
 }
 
-.gallery .desc {
-  padding: 15px;
+.three-column .desc {
+  padding: 10px;
   text-align: center;
 }
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
